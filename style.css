@@ -1,0 +1,106 @@
+@import url("utility.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.testimonials {
+  background: rgb(199, 199, 235);
+}
+
+.heading h1 {
+  font-size: 3rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 1280PX;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "item1 item1 item2 item3" "item4 item5 item5 item3";
+  gap: 1rem;
+}
+
+.item {
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "image name" "title title" "description description";
+  row-gap: 1rem;
+  align-content: start;
+  box-shadow: rgba(245, 222, 179, 0.011) 10px 2px 8px 0px;
+}
+
+.item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  grid-area: image;
+}
+
+.item .name {
+  font-size: 1.6rem;
+  grid: name;
+  align-self: center;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+.item .title {
+  font-size: 1.9rem;
+  grid-area: title;
+  font-weight: 600;
+}
+
+.item .description {
+  font-size: 1.6rem;
+  grid-area: description;
+}
+
+.item .description::after {
+  content: '"';
+}
+
+.item .description::before {
+  content: '"';
+}
+
+.item1 {
+  background: blueviolet url("./media/img7.jpg") no-repeat top 10% right 20px;
+  background-size: 50px;
+  grid-area: item1;
+}
+
+.item2 {
+  background: rgb(43, 86, 226);
+  grid-area: item2;
+}
+
+.item3 {
+  background: rgb(146, 236, 116);
+  grid-area: item3;
+}
+
+.item4 {
+  background: rgb(209, 102, 102);
+  grid-area: item4;
+}
+
+.item5 {
+  background: rgb(36, 149, 157);
+  grid-area: item5;
+}/*# sourceMappingURL=style.css.map */
